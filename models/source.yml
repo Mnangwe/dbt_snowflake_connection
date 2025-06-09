@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: northwind
+    database: dbtdemo
+    schema: load
+    tables:
+      - name: categories
+      - name: products
+      - name: suppliers
+      - name: customers
+      - name: employees
+      - name: employeeterritories
+      - name: territories
+      - name: region
+      - name: orderdetails
+      - name: orders

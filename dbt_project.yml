@@ -32,5 +32,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_snow:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    stage:
+      schema: stage
+      +materialized: view
+    dwh:
+      schema: dwh
+      +materialized: table
+    marts:
+      schema: marts
       +materialized: view
